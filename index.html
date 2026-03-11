@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webix Tech LLC — Growth Infrastructure for Ambitious Businesses</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVBAR -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-mark">W</span>
+        <span class="nav__logo-text">Webix Tech</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#results">Results</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#comparison">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="nav__cta">Get Started</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+
+    <div class="hero__inner">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        Your Needs, Our Priorities
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line reveal" data-delay="0">We Don't Build</span>
+        <span class="hero__title-line hero__title-line--accent reveal" data-delay="100">Websites.</span>
+        <span class="hero__title-line reveal" data-delay="200">We Build</span>
+        <span class="hero__title-line hero__title-line--outline reveal" data-delay="300">Revenue.</span>
+      </h1>
+
+      <p class="hero__sub reveal" data-delay="400">
+        Every pixel, every keyword, every ad dollar we touch is engineered with one goal:<br>
+        <strong>more customers, higher margins, unstoppable growth.</strong>
+      </p>
+
+      <div class="hero__actions reveal" data-delay="500">
+        <a href="#contact" class="btn btn--primary">Start Growing Today</a>
+        <a href="#services" class="btn btn--ghost">See How It Works ↓</a>
+      </div>
+
+      <!-- Floating metrics -->
+      <div class="hero__metrics reveal" data-delay="600">
+        <div class="metric">
+          <span class="metric__num" data-target="340">0</span><span class="metric__sym">%</span>
+          <span class="metric__label">Avg. ROI increase</span>
+        </div>
+        <div class="metric__divider"></div>
+        <div class="metric">
+          <span class="metric__num" data-target="12">0</span><span class="metric__sym">×</span>
+          <span class="metric__label">More leads, same budget</span>
+        </div>
+        <div class="metric__divider"></div>
+        <div class="metric">
+          <span class="metric__num" data-target="90">0</span><span class="metric__sym">d</span>
+          <span class="metric__label">To first measurable result</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abstract visual -->
+    <div class="hero__visual">
+      <div class="hero__canvas" id="heroCanvas">
+        <svg class="hero__svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Concentric rings -->
+          <circle cx="250" cy="250" r="200" stroke="#0F0F1A" stroke-width="0.5" stroke-dasharray="4 8" class="svg-ring svg-ring--1"/>
+          <circle cx="250" cy="250" r="150" stroke="#0F0F1A" stroke-width="0.5" stroke-dasharray="4 8" class="svg-ring svg-ring--2"/>
+          <circle cx="250" cy="250" r="100" stroke="#7B4FBF" stroke-width="1" stroke-dasharray="4 6" class="svg-ring svg-ring--3"/>
+          <circle cx="250" cy="250" r="50" stroke="#7B4FBF" stroke-width="1.5" class="svg-ring svg-ring--4"/>
+          <!-- Center dot -->
+          <circle cx="250" cy="250" r="8" fill="#7B4FBF" class="svg-center"/>
+          <circle cx="250" cy="250" r="4" fill="#0F0F1A"/>
+          <!-- Orbiting dots -->
+          <circle cx="250" cy="50" r="5" fill="#0F0F1A" class="orbit-dot orbit-dot--1"/>
+          <circle cx="450" cy="250" r="4" fill="#7B4FBF" class="orbit-dot orbit-dot--2"/>
+          <circle cx="250" cy="400" r="3" fill="#0F0F1A" class="orbit-dot orbit-dot--3"/>
+          <circle cx="100" cy="150" r="3" fill="#7B4FBF" class="orbit-dot orbit-dot--4"/>
+          <!-- Cross lines -->
+          <line x1="250" y1="0" x2="250" y2="500" stroke="#0F0F1A" stroke-width="0.3" opacity="0.2"/>
+          <line x1="0" y1="250" x2="500" y2="250" stroke="#0F0F1A" stroke-width="0.3" opacity="0.2"/>
+          <!-- Diagonal -->
+          <line x1="75" y1="75" x2="425" y2="425" stroke="#7B4FBF" stroke-width="0.3" opacity="0.3"/>
+          <line x1="425" y1="75" x2="75" y2="425" stroke="#7B4FBF" stroke-width="0.3" opacity="0.3"/>
+          <!-- Data points -->
+          <rect x="240" y="30" width="20" height="2" fill="#7B4FBF" opacity="0.6"/>
+          <rect x="240" y="468" width="20" height="2" fill="#7B4FBF" opacity="0.6"/>
+          <rect x="30" y="240" width="2" height="20" fill="#7B4FBF" opacity="0.6"/>
+          <rect x="468" y="240" width="2" height="20" fill="#7B4FBF" opacity="0.6"/>
+          <!-- Arc labels -->
+          <text x="260" y="48" fill="#0F0F1A" font-size="8" font-family="DM Mono" opacity="0.4">GROWTH</text>
+          <text x="370" y="130" fill="#7B4FBF" font-size="7" font-family="DM Mono" opacity="0.5">01 / SEO</text>
+          <text x="370" y="390" fill="#7B4FBF" font-size="7" font-family="DM Mono" opacity="0.5">02 / WEB</text>
+          <text x="90" y="390" fill="#7B4FBF" font-size="7" font-family="DM Mono" opacity="0.5">03 / ADS</text>
+          <text x="90" y="130" fill="#7B4FBF" font-size="7" font-family="DM Mono" opacity="0.5">04 / BRAND</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>Revenue Growth</span><span class="marquee__dot">·</span>
+      <span>SEO Dominance</span><span class="marquee__dot">·</span>
+      <span>Web Conversion</span><span class="marquee__dot">·</span>
+      <span>Brand Authority</span><span class="marquee__dot">·</span>
+      <span>Paid Ads ROI</span><span class="marquee__dot">·</span>
+      <span>Local Market Monopoly</span><span class="marquee__dot">·</span>
+      <span>Google Business</span><span class="marquee__dot">·</span>
+      <span>Revenue Growth</span><span class="marquee__dot">·</span>
+      <span>SEO Dominance</span><span class="marquee__dot">·</span>
+      <span>Web Conversion</span><span class="marquee__dot">·</span>
+      <span>Brand Authority</span><span class="marquee__dot">·</span>
+      <span>Paid Ads ROI</span><span class="marquee__dot">·</span>
+      <span>Local Market Monopoly</span><span class="marquee__dot">·</span>
+      <span>Google Business</span><span class="marquee__dot">·</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ RESULTS / OUTCOMES -->
+  <section class="outcomes" id="results">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What You Actually Get</span>
+        <h2 class="section-title">Outcomes, Not Outputs</h2>
+        <p class="section-sub">We're not here to hand you deliverables. We're here to change your bottom line.</p>
+      </div>
+      <div class="outcomes__grid">
+        <div class="outcome-card reveal" data-delay="0">
+          <div class="outcome-card__icon">↑</div>
+          <h3>More Qualified Leads</h3>
+          <p>High-intent prospects arrive at your door already sold on you — no cold calling, no chasing.</p>
+        </div>
+        <div class="outcome-card reveal" data-delay="100">
+          <div class="outcome-card__icon">$</div>
+          <h3>Higher Profit Margins</h3>
+          <p>A premium brand and top-ranking presence lets you charge what you're worth and stop competing on price.</p>
+        </div>
+        <div class="outcome-card reveal" data-delay="200">
+          <div class="outcome-card__icon">∞</div>
+          <h3>Compounding Growth</h3>
+          <p>Unlike ads that stop when you pause, our organic systems build momentum that pays forever.</p>
+        </div>
+        <div class="outcome-card reveal" data-delay="300">
+          <div class="outcome-card__icon">◎</div>
+          <h3>Market Authority</h3>
+          <p>Be the undeniable #1 choice in your city — the brand people trust before they even visit your site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="section-title">Five Engines.<br>One Goal: Your Growth.</h2>
+      </div>
+
+      <div class="services__list">
+
+        <div class="service-item reveal" data-delay="0">
+          <div class="service-item__head">
+            <span class="service-item__num">01</span>
+            <div>
+              <h3 class="service-item__title">Your 24/7 Sales Machine</h3>
+              <span class="service-item__tag">Web Development</span>
+            </div>
+            <span class="service-item__arrow">→</span>
+          </div>
+          <div class="service-item__body">
+            <p class="service-item__hook">Stop thinking of it as a website. Think of it as your hardest-working salesperson — one that never sleeps, never quits, and always closes.</p>
+            <ul class="service-item__points">
+              <li><strong>High-Velocity Sales Funnels</strong> — Sites that lead customers hand-in-hand from the first click to "Thank You."</li>
+              <li><strong>Conversion-First Design</strong> — Layouts scientifically built to turn visitors into buyers, not just admirers.</li>
+              <li><strong>Friction-Free Journeys</strong> — Every hurdle removed. Every leak sealed. Every dollar of ROI kept.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-item reveal" data-delay="100">
+          <div class="service-item__head">
+            <span class="service-item__num">02</span>
+            <div>
+              <h3 class="service-item__title">The Evergreen Lead Engine</h3>
+              <span class="service-item__tag">Search Engine Optimisation</span>
+            </div>
+            <span class="service-item__arrow">→</span>
+          </div>
+          <div class="service-item__body">
+            <p class="service-item__hook">Stop chasing customers. Let them find you when their credit card is already out.</p>
+            <ul class="service-item__points">
+              <li><strong>Predictable Pipeline</strong> — An organic engine filling your funnel with high-intent leads while you sleep.</li>
+              <li><strong>Authority That Pays</strong> — Ranking #1 makes you the "safe bet" — which naturally lifts your conversion rate.</li>
+              <li><strong>Zero-Cost Acquisition</strong> — Unlike ads, once this engine runs, your cost-per-lead drops indefinitely.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-item reveal" data-delay="200">
+          <div class="service-item__head">
+            <span class="service-item__num">03</span>
+            <div>
+              <h3 class="service-item__title">The "Near Me" Goldmine</h3>
+              <span class="service-item__tag">Google Business Profile</span>
+            </div>
+            <span class="service-item__arrow">→</span>
+          </div>
+          <div class="service-item__body">
+            <p class="service-item__hook">Be the first call when someone needs help right now — not tomorrow, right now.</p>
+            <ul class="service-item__points">
+              <li><strong>Instant Trust & Social Proof</strong> — Your reviews become a closing tool that makes saying "yes" effortless.</li>
+              <li><strong>Short-Circuit the Funnel</strong> — Your number, right in front of buyers at the exact moment they're ready.</li>
+              <li><strong>Local Market Monopoly</strong> — Dominate the Map Pack. Own your city before they even see a competitor.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-item reveal" data-delay="300">
+          <div class="service-item__head">
+            <span class="service-item__num">04</span>
+            <div>
+              <h3 class="service-item__title">The Value Multiplier</h3>
+              <span class="service-item__tag">Branding & Identity</span>
+            </div>
+            <span class="service-item__arrow">→</span>
+          </div>
+          <div class="service-item__body">
+            <p class="service-item__hook">Cheap-looking brands work twice as hard to sell half as much. Let's fix that.</p>
+            <ul class="service-item__points">
+              <li><strong>Premium Price Positioning</strong> — Look the part. Charge what you're worth. Protect your margins.</li>
+              <li><strong>Instant Recognition</strong> — A visual identity that sticks, making every marketing dollar work harder.</li>
+              <li><strong>Customer Loyalty Engine</strong> — Turns one-time buyers into repeat fans, compounding your LTV.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-item reveal" data-delay="400">
+          <div class="service-item__head">
+            <span class="service-item__num">05</span>
+            <div>
+              <h3 class="service-item__title">Revenue Velocity</h3>
+              <span class="service-item__tag">Marketing & Paid Ads</span>
+            </div>
+            <span class="service-item__arrow">→</span>
+          </div>
+          <div class="service-item__body">
+            <p class="service-item__hook">Plug in $1, get $5 back. A machine that scales with confidence, not guesswork.</p>
+            <ul class="service-item__points">
+              <li><strong>Data-Driven Scalability</strong> — We find your winning formula, then scale your budget with certainty.</li>
+              <li><strong>Retargeting Magic</strong> — We catch the "almost-buyers" and bring them back to finish the job.</li>
+              <li><strong>Full-Funnel Alignment</strong> — Ads, pages, and messaging that talk to each other and compound your ROI.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ COMPARISON -->
+  <section class="comparison" id="comparison">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The Difference</span>
+        <h2 class="section-title">The Old Way vs.<br>The Webix Way</h2>
+      </div>
+
+      <div class="comparison__table reveal">
+        <div class="comparison__col comparison__col--old">
+          <div class="comparison__col-head">
+            <span class="comparison__col-label">The Old Way</span>
+            <span class="comparison__col-icon">✕</span>
+          </div>
+          <ul class="comparison__list">
+            <li>Slow, pretty-but-passive websites</li>
+            <li>Random SEO with zero strategy</li>
+            <li>Confusing, forgettable brand</li>
+            <li>Ads that burn money and guess</li>
+            <li>Invisible on Google Maps</li>
+            <li>Competing on price, always</li>
+            <li>Chasing leads manually</li>
+            <li>No idea what's working</li>
+          </ul>
+        </div>
+        <div class="comparison__divider">
+          <div class="comparison__divider-line"></div>
+          <span class="comparison__divider-vs">VS</span>
+          <div class="comparison__divider-line"></div>
+        </div>
+        <div class="comparison__col comparison__col--new">
+          <div class="comparison__col-head">
+            <span class="comparison__col-label">The Webix Way</span>
+            <span class="comparison__col-icon">✓</span>
+          </div>
+          <ul class="comparison__list">
+            <li>High-converting revenue funnels</li>
+            <li>#1 rankings with compounding ROI</li>
+            <li>Premium brand that commands price</li>
+            <li>Data-driven ads that scale profitably</li>
+            <li>Local Map Pack dominance</li>
+            <li>Charging what you're worth</li>
+            <li>Leads arrive pre-sold, ready to buy</li>
+            <li>Full transparency, real metrics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2 class="section-title">From Zero to<br>Market Leader in 4 Steps</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step reveal" data-delay="0">
+          <span class="process__step-num">01</span>
+          <h4>Discovery Call</h4>
+          <p>We learn your goals, your market, your competition. No templates — a custom strategy from day one.</p>
+        </div>
+        <div class="process__connector reveal" data-delay="50"></div>
+        <div class="process__step reveal" data-delay="100">
+          <span class="process__step-num">02</span>
+          <h4>Growth Blueprint</h4>
+          <p>We deliver a precise roadmap showing exactly which levers to pull and in which order for maximum ROI.</p>
+        </div>
+        <div class="process__connector reveal" data-delay="150"></div>
+        <div class="process__step reveal" data-delay="200">
+          <span class="process__step-num">03</span>
+          <h4>Execution & Launch</h4>
+          <p>Our team builds, optimizes, and launches every component with surgical precision and zero fluff.</p>
+        </div>
+        <div class="process__connector reveal" data-delay="250"></div>
+        <div class="process__step reveal" data-delay="300">
+          <span class="process__step-num">04</span>
+          <h4>Scale & Compound</h4>
+          <p>We monitor, iterate, and compound your results — turning initial wins into unstoppable momentum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <h2 class="cta-band__title">Your competitors are growing right now.<br><em>Are you?</em></h2>
+        <p class="cta-band__sub">Let's build your growth infrastructure. No pressure, no fluff — just a conversation about what's possible.</p>
+        <a href="#contact" class="btn btn--primary btn--lg">Get My Free Growth Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__left reveal">
+          <span class="eyebrow">Let's Talk</span>
+          <h2 class="section-title">One Conversation.<br>Unlimited Upside.</h2>
+          <p>Tell us where you are. We'll show you where you could be — and exactly how to get there.</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <span class="contact__detail-label">Location</span>
+              <span>5900 Balcones Dr Ste 15098<br>Austin, TX 78731</span>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">Email</span>
+              <span>hello@webixtechllc.com</span>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__detail-label">Response Time</span>
+              <span>Within 24 hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact__right reveal" data-delay="150">
+          <form class="contact__form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="John Smith" required />
+              </div>
+              <div class="form-group">
+                <label>Business Name</label>
+                <input type="text" placeholder="Smith & Co." />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@smithco.com" required />
+            </div>
+            <div class="form-group">
+              <label>What's your biggest growth challenge?</label>
+              <select>
+                <option value="">Select a goal...</option>
+                <option>I need more leads & customers</option>
+                <option>I want to rank higher on Google</option>
+                <option>I need a website that actually converts</option>
+                <option>My brand looks outdated</option>
+                <option>I want to scale my ad spend profitably</option>
+                <option>I want to dominate locally (Google Maps)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell us more (optional)</label>
+              <textarea placeholder="Any context about your business, goals, or current situation..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send My Growth Request →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <span class="nav__logo-mark">W</span>
+            <span class="nav__logo-text">Webix Tech</span>
+          </a>
+          <p>Growth infrastructure for businesses that refuse to be average.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <span class="footer__col-title">Services</span>
+            <a href="#services">Web Development</a>
+            <a href="#services">SEO</a>
+            <a href="#services">Google Business</a>
+            <a href="#services">Branding</a>
+            <a href="#services">Paid Marketing</a>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Company</span>
+            <a href="#results">Results</a>
+            <a href="#comparison">Why Webix</a>
+            <a href="#process">Our Process</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Webix Tech LLC. All rights reserved. Austin, TX.</span>
+        <span class="footer__tagline">Your Needs, Our Priorities.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
